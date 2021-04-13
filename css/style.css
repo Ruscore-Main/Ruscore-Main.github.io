@@ -1,0 +1,128 @@
+@import url(normalize.css);
+
+:root {
+    --fungus-color: #fef2e4;
+    --onion-color: #fd974f;
+    --red-pepper-color: #c60000;
+    --tree-color: #805a3b;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-size: 2% auto;
+    background-color: var(--red-pepper-color);
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 100%;
+    background-color: white;
+    padding: 2em;
+    border-left: var(--tree-color) 5px solid;
+    border-right: var(--tree-color) 5px solid;
+}
+
+/* Шапка */
+
+header {
+    background-color: var(--fungus-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+
+header .title img {
+    max-width: 1.5em;
+}
+
+header .title:after {
+    content: 'KAKARANDASH';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header input[type='search'] {
+    padding: .5em;
+    padding-left: .7em;
+    outline:none;
+    border: none;
+    border-radius: 15px;
+    margin: 0 .5em;
+}
+
+header .deviz {
+    font-style: italic;
+    font-size: 1.5em;
+    color: var(--onion-color);
+}
+
+header .deviz::first-letter {
+    color: black;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* Навигация */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-bottom: solid black 2px;
+}
+
+
+/* Главный контент */
+
+main {
+    margin-top: 3em;
+    margin-bottom: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+article h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+footer {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #444444;
+    padding: 4em;
+    align-items: baseline;
+    flex-wrap: wrap;
+    
+}
+
+footer .contacts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.el-contacts {
+    margin-right: 1em;
+} 
